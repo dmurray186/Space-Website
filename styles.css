@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+
+}
+
+.index {
+  background-image: url("assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body {
+  margin: 0;
+  color: white;
+}
+
+
+div#nav-bar {
+  position: absolute;
+  right:  0;
+  top: 5%;
+  height: 80px;
+  width: 45%;
+  /*filter: blur(5px);*/
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+li {
+display: inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+  margin-left: 0;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+div#textBox {
+  position: relative;
+  top: 200px;
+  height: 40%;
+  margin-right: 65%;
+  margin-left: 20%;
+  line-height: 2;
+  width: 30%;
+
+}
+
+
+#bigH1{
+  font-size: 7rem;
+  line-height: 0;
+
+}
+
+#bigH2 {
+  line-height: 1;
+}
+
+#introP {
+  line-height: 1;
+  margin-right: 25%;
+
+}
+
+
+div#buttonDiv {
+  width: 30%;
+  float: right;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+button#explore {
+  border-radius: 50%;
+  background-color: white;
+  font-size: 30px;
+  padding: 90px 60px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+
+}
+
+button#explore:hover {
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 50px;
+}
+
+
+/*Screen between 768px and 992px (Tablet)*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div#nav-bar {
+    width: 100%;
+    top: 0;
+  }
+
+   div#textBox {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    top: 100px;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+  #introP {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  ul {
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  div#buttonDiv {
+    /*float: left;*/
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0%;
+  }
+  .index {
+    background-image: url("assets/home/background-home-tablet.jpg");
+  }
+
+  }
+
+/*Screens 768px and smaller (Phone)*/
+@media screen and (max-width: 768px) {
+  div#textBox {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    top: 100px;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+  #introP {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  ul {
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  div#buttonDiv {
+    /*float: left;*/
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 10%;
+  }
+  .index {
+    background-image: url("assets/home/background-home-mobile.jpg");
+  }
+  div#nav-bar {
+    width: 100%;
+    top: 0;
+
+  }
+
+}
