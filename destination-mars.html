@@ -1,37 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="destination">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
+  <link rel="stylesheet" href="styles.css">
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
 
-  01 Pick your destination
+<div class="nav-bar">
+<ul class="nav">
+  <li class="nav-item"><a href="index.html">00 Home</a></li>
+  <li class="nav-item"><a class="active" href="destination-mars.html">01 Destination</a></li>
+  <li class="nav-item"><a href="crew-pilot.html">03 Crew</a></li>
+  <li class="nav-item"><a href="technology-vehicle.html">04 Technology</a></li>
+</ul>
+</div>
 
-  Moon
-  Mars
-  Europa
-  Titan
+  
+<div class="planet-div">
+<h2 class="destination-title">01 Pick your destination</h2>
+<img class="planet-image" src="assets/destination/image-mars.png"></img>
+</div>
 
-  Mars
+<div class="planet-info">
 
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
+<div class="planet-menu-div">
+<ul class="planet-list">
+  <li class="planet-list-item"><a id="moon" href="#">Moon</a></li>
+  <li class="planet-list-item"><a class="active" id="mars" href="#">Mars</a></li>
+  <li class="planet-list-item"><a id="europa" href="#">Europa</a></li>
+  <li class="planet-list-item"><a id="titan" href="#">Titan</a></li>
+</ul>
+</div>
 
-  Avg. distance
-  225 mil. km
 
-  Est. travel time
-  9 months
+<h1 class="planet-title">Mars</h1>
+<p class="planet-desc">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+the tallest planetary mountain in our solar system. It’s two and a half times 
+the size of Everest!</p>
+<!-- </div> -->
+
+<!-- <div class="planet-stats"> -->
+<hr>
+
+<div class="distance">
+<p class="distance-avg">Avg. distance</p>
+<h2 class="distance-value">225 mil. km</h2>
+</div>
+
+<div class="time">
+<p class="travel-est">Est. travel time</p>
+<h2 class="travel-value">9 months</h2>
+</div>
+
+</div>
+
+
+<script type="text/javascript" src="data.json"></script>
+<script src="script.js"></script>
 </body>
 </html>

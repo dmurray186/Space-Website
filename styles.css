@@ -3,13 +3,21 @@
 
 }
 
-.index {
-  background-image: url("assets/home/background-home-desktop.jpg");
+html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
+
+.index {
+  background-image: url("assets/home/background-home-desktop.jpg");
+}
+
+.destination {
+  background-image: url("assets/destination/background-destination-desktop.jpg");
+}
+
 
 body {
   margin: 0;
@@ -17,7 +25,8 @@ body {
 }
 
 
-div#nav-bar {
+/*Nav Bar*/
+div.nav-bar {
   position: absolute;
   right:  0;
   top: 5%;
@@ -26,7 +35,7 @@ div#nav-bar {
   /*filter: blur(5px);*/
 }
 
-ul {
+ul.nav {
   list-style-type: none;
   padding-left: 0;
   padding-right: 0;
@@ -36,11 +45,11 @@ ul {
   
 }
 
-li {
+li.nav-item {
 display: inline-block;
 }
 
-li a {
+li.nav-item a {
   display: block;
   color: white;
   text-align: center;
@@ -49,11 +58,16 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+li.nav-item a:hover {
+  background-color: #111;
+}
+
+a.active {
   background-color: #111;
 }
 
 
+/*Home Page*/
 div#textBox {
   position: relative;
   top: 200px;
@@ -62,9 +76,7 @@ div#textBox {
   margin-left: 20%;
   line-height: 2;
   width: 30%;
-
 }
-
 
 #bigH1{
   font-size: 7rem;
@@ -110,9 +122,91 @@ button#explore:hover {
 }
 
 
+/*Destination Page*/
+
+
+ul.planet-list {
+  list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+  
+}
+
+li.planet-list-item {
+display: inline-block;
+}
+
+li.planet-list-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+li.planet-list-item a:hover {
+  background-color: #111;
+}
+
+div.planet-div {
+  width: 50%;
+  border: 2px solid white;
+  margin-left: 5%;
+  margin-top: 7%;
+  display: inline-block;
+
+}
+
+img.planet-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+div.planet-info {
+  float: right;
+  border: 2px solid white;
+  width: 30%;
+  display: inline-block;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+h2.destination-title {
+  margin-bottom: 10%;
+}
+
+h1.planet-title {
+}
+
+p.planet-desc {
+  margin-right: 30%;
+}
+
+hr {
+  border-top: 1px solid white;
+  width: 70%;
+}
+
+div.distance {
+  display: inline-block;
+  /*margin-left: 5%;*/
+}
+
+div.time {
+  display: inline-block;
+  margin-left: 10%;
+}
+
 /*Screen between 768px and 992px (Tablet)*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  div#nav-bar {
+  div.nav-bar {
     width: 100%;
     top: 0;
   }
@@ -130,7 +224,7 @@ button#explore:hover {
     margin-left: 10%;
   }
 
-  ul {
+  ul.nav {
     text-align: center;
     padding: 0;
     margin-top: 0;
@@ -165,7 +259,7 @@ button#explore:hover {
     margin-left: 10%;
   }
 
-  ul {
+  ul.nav {
     text-align: center;
     padding: 0;
     margin-top: 0;
@@ -182,7 +276,7 @@ button#explore:hover {
   .index {
     background-image: url("assets/home/background-home-mobile.jpg");
   }
-  div#nav-bar {
+  div.nav-bar {
     width: 100%;
     top: 0;
 
