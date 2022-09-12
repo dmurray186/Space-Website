@@ -1,0 +1,415 @@
+* {
+  box-sizing: border-box;
+
+}
+
+html {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.index {
+  background-image: url("/assets/home/background-home-desktop.jpg");
+}
+
+.destination {
+  background-image: url("/assets/destination/background-destination-desktop.jpg");
+}
+
+.crew {
+  background-image: url("/assets/crew/background-crew-desktop.jpg");
+}
+
+.technology {
+  background-image: url("/assets/technology/background-technology-desktop.jpg");
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h2, p {
+  color: silver;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+
+
+/*Nav Bar*/
+
+.container{
+  position: absolute;
+  right:  0;
+  top: 5%;
+  height: 85px;
+  width: 55%;
+  background: inherit;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.container:before{
+  height: 550px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  background: inherit;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
+  filter: blur(10px);
+
+}
+
+
+div.nav-bar {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  margin-left: 0;
+}
+
+ul.nav {
+  list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: small;
+
+
+}
+
+li.nav-item {
+display: inline-block;
+}
+
+li.nav-item a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 30px 16px;
+  margin-left: 0;
+  text-decoration: none;
+
+}
+
+li.nav-item a:hover {
+  border-bottom: 3px solid whitesmoke;
+
+}
+
+.active {
+  border-bottom: 3px solid whitesmoke;
+
+}
+
+
+/*Home Page*/
+h1#bigH1{
+  font-size: 9rem;
+  line-height: 0.25;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+#bigH2 {
+  line-height: 1;
+  text-transform: uppercase;
+  margin-right: 0;
+
+}
+
+#introP {
+  line-height: 1.75;
+  margin-right: 45%;
+
+}
+
+div#textBox {
+  margin-left: 15%;
+  margin-top: 20%;
+  line-height: 2;
+  width: 40%;
+  display: inline-block;
+}
+
+div#buttonDiv {
+  width: 25%;
+  float: right;
+  display: inline-block;
+  margin-right: 15%;
+  margin-top: 25%;
+
+}
+
+#explore {
+  border-radius: 50%;
+  background-color: white;
+  font-size: 30px;
+  padding: 150px 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #111111;
+  font-family: 'Nanum Myeongjo', serif;
+  text-transform: uppercase;
+
+
+}
+
+#explore:hover {
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 50px;
+}
+
+
+/*Destination Page*/
+
+
+ul.planet-list {
+  list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: small;
+
+}
+
+li.planet-list-item {
+display: inline-block;
+}
+
+li.planet-list-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+li.planet-list-item a:hover {
+  border-bottom: 5px solid whitesmoke;
+
+}
+
+div.planet-div {
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 10%;
+  display: inline-block;
+
+}
+
+img.planet-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+div.planet-info {
+  float: right;
+  width: 38%;
+  display: inline-block;
+  margin-right: 5%;
+  margin-top: 12%;
+}
+
+h2.destination-title {
+  margin-bottom: 10%;
+  margin-left: 10%;
+
+}
+
+
+h1.planet-title {
+  font-size: 5rem;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+p.planet-desc {
+  margin-right: 30%;
+  margin-bottom: 10%;
+  line-height: 1.75;
+}
+
+hr {
+  border-top: 1px solid silver;
+  width: 80%;
+  margin-left: 0;
+  margin-bottom: 5%;
+}
+
+div.distance {
+  display: inline-block;
+}
+
+div.time {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.invisible {
+  visibility: hidden
+}
+
+p.distance-avg {
+
+}
+
+
+/*Crew Page*/
+
+div.crew-info {
+  width: 35%;
+  display: inline-block;
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
+h2.crew-title {
+  margin-bottom: 20%;
+
+}
+
+h2.crew-role {
+  margin-bottom: 0;
+}
+
+h1.crew-name {
+  font-size: 3rem;
+  margin-top: 2%;
+}
+
+p.crew-desc {
+  margin-bottom: 20%;
+  margin-right: 40%;
+  line-height: 1.5;
+}
+
+div.crew-div {
+  float: right;
+  display: inline-block;
+  margin-right: 15%;
+  margin-top: 15%;
+  width: 30%;
+  height: auto;
+}
+
+img.crew-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+button.crew-button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+/*Technology Page*/
+
+
+div.tech-info {
+  float: left;
+  width: 40%;
+  display: inline-block;
+  margin-left: 2%;
+  margin-top: 15%;
+}
+
+img.tech-image {
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+  width: 95%;
+}
+
+div.tech-image-div {
+  float: right;
+  display: inline-block;
+  margin-right: 0;
+  margin-top: 6%;
+  width: 40%;
+  margin-bottom: 2%;
+}
+
+
+/*Buttons*/
+.tech-button {
+  margin: 10px;
+  padding: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #111111;
+  color: white;
+  font-size: 1.75rem;
+
+}
+
+.active-tech {
+  background-color: whitesmoke;
+  color: black;
+}
+
+/*Buttons Div*/
+div.tech-menu-div {
+  width: 5%;
+  margin-left: 7%;
+  display: inline-block;
+  float: left;
+  margin-top: 15%;
+
+}
+
+h2.tech-term {
+  margin-left: 0;
+
+}
+
+h1.tech-name {
+  font-size: 4rem;
+  margin-top: 5%;
+  margin-bottom: 0;
+  margin-left: 0;
+
+}
+
+p.tech-desc {
+  margin-left: 0;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  line-height: 1.75;
+  font-size: 1.25rem;
+}
+
+

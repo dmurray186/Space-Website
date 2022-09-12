@@ -1,0 +1,183 @@
+div.container {
+    width: 100%;
+    top: 0;
+
+  }
+
+    div.nav-bar {
+    width: 100%;
+    top: 0;
+    left: 0;
+
+  }
+
+  div#textBox {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  #introP {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  ul.nav {
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  div#buttonDiv {
+    float: left;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .index {
+    background-image: url("/assets/home/background-home-mobile.jpg");
+  }
+
+  .destination {
+  background-image: url("/assets/destination/background-destination-mobile.jpg");
+  }
+
+  .crew {
+  background-image: url("/assets/crew/background-crew-mobile.jpg");
+  }
+
+  .technology {
+  background-image: url("/assets/technology/background-technology-mobile.jpg");
+  }
+
+
+  div.planet-div {
+    width: 100%;
+    margin-top: 20%;
+    margin-left: 0;
+  }
+
+
+   div.planet-info {
+    margin-top: 5%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+
+  p.planet-desc {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  line-height: 1.75;
+}
+
+  hr {
+    margin-left: 10%;
+  }
+
+  h2.crew-title {
+    margin-bottom: 0;
+    text-align: left;
+    /*position: relative;*/
+    /*left:0;*/
+  }
+
+  p.crew-desc {
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    /*display: block;*/
+  }
+
+  div.crew-info {
+    margin-top: 15%;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  div.crew-div {
+    float: left;
+    width: 100%;
+    margin-top: 5%;
+
+  }
+
+  img.crew-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 60%;
+  width: 60%;
+
+}
+
+
+  div.wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  div.tech-info {
+  float: right;
+  width: 100%;
+  margin-left: 0;
+    margin-top: 2%;
+  /*margin-top: 15%;*/
+  text-align: center;
+  order: 3;
+
+}
+
+img.tech-image {
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+  width: 100%;
+  /*margin-top: 8%;*/
+  /*float: right;*/
+}
+
+div.tech-image-div {
+  margin-right: 0;
+  margin-top: 6%;
+  /*height: auto;*/
+  width: 100%;
+  margin-bottom: 0;
+  order: 1;
+}
+
+
+/*Buttons*/
+.tech-button {
+  margin: 0 5%;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #111111;
+  color: white;
+  /*font-size: 1.75rem;*/
+
+}
+
+
+/*Buttons Div*/
+div.tech-menu-div {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 5%;
+  float: left;
+  order: 2;
+  text-align: center;
+}
+
+
+p.tech-desc {
+  line-height: 1.75;
+  font-size: 1.25rem;
+  width: 80%;
+  margin-left: 10%;
+}

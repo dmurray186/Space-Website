@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="destination">
+
+<%- include("partials/header") -%>
+
+
+<div class="planet-div">
+  <h2 class="destination-title"><span style="color:grey">01</span> Pick your destination</h2>
+<img class="planet-image">
+</div>
+
+<div class="planet-info">
+
+<div class="planet-menu-div">
+<ul class="planet-list">
+  <li class="planet-list-item"><a class="planet active" id="moon" href="#">Moon</a></li>
+  <li class="planet-list-item"><a class="planet" id="mars" href="#">Mars</a></li>
+  <li class="planet-list-item"><a class="planet" id="europa" href="#">Europa</a></li>
+  <li class="planet-list-item"><a class="planet" id="titan" href="#">Titan</a></li>
+</ul>
+</div>
+
+
+<h1 class="planet-title"></h1>
+<p class="planet-desc"></p>
+
+<hr>
+
+<div class="distance">
+<p class="distance-avg">Avg. distance</p>
+<h2 class="distance-value"></h2>
+</div>
+
+<div class="time">
+<p class="travel-est">Est. travel time</p>
+<h2 class="travel-value"></h2>
+</div>
+
+</div>
+
+
+<%- include("partials/footer") -%>
