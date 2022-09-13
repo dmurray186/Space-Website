@@ -12,6 +12,12 @@ function highlightNav() {
 }
 
 
+
+document.querySelector(".nav-drop").addEventListener("click", function() {
+  document.querySelector(".nav-drop").classList.toggle("change");
+});
+
+
 async function getData() {
     let url = 'data.json';
     try {

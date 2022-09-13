@@ -62,7 +62,7 @@ p {
   width: 55%;
   background: inherit;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .container:before{
@@ -76,6 +76,13 @@ p {
 
 }
 
+#check01 {
+  display: none;
+}
+
+ul.nav-dropdown {
+  display: none
+}
 
 div.nav-bar {
   position: absolute;
@@ -90,7 +97,7 @@ ul.nav {
   padding-right: 0;
   margin: 0;
   text-transform: uppercase;
-  font-size: small;
+  font-size: 1.25vw;
 
 
 }
@@ -120,6 +127,7 @@ li.nav-item a:hover {
 }
 
 
+
 /*Home Page*/
 h1#bigH1{
   font-size: 9rem;
@@ -138,7 +146,7 @@ h1#bigH1{
 
 #introP {
   line-height: 1.75;
-  margin-right: 45%;
+  margin-right: 20%;
 
 }
 
@@ -163,7 +171,7 @@ div#buttonDiv {
   border-radius: 50%;
   background-color: white;
   font-size: 30px;
-  padding: 150px 100px;
+  padding: 125px 75px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -201,6 +209,7 @@ ul.planet-list {
 
 li.planet-list-item {
 display: inline-block;
+cursor: pointer;
 }
 
 li.planet-list-item a {
@@ -293,6 +302,7 @@ div.crew-info {
 }
 
 h2.crew-title {
+  /* margin-left: 10px; */
   margin-bottom: 20%;
 
 }
@@ -339,12 +349,18 @@ button.crew-button {
 /*Technology Page*/
 
 
+h2.tech-title {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 0;
+}
+
 div.tech-info {
   float: left;
   width: 40%;
   display: inline-block;
   margin-left: 2%;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 img.tech-image {
@@ -358,7 +374,7 @@ div.tech-image-div {
   float: right;
   display: inline-block;
   margin-right: 0;
-  margin-top: 6%;
+  margin-top: 2%;
   width: 40%;
   margin-bottom: 2%;
 }
@@ -417,13 +433,17 @@ p.tech-desc {
 /*Screen between 768px and 992px (Tablet)*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.container {
-    width: 100%;
+    width: 65%;
     top: 0;
 
   }
 
   div.nav-bar {
-    left: 20%;
+    left: 5%;
+  }
+
+  #check01 {
+    display: none;
   }
 
    div#textBox {
@@ -434,6 +454,7 @@ p.tech-desc {
     text-align: center;
     margin-bottom: 0;
   }
+
   #introP {
     margin-right: 10%;
     margin-left: 10%;
@@ -443,6 +464,7 @@ p.tech-desc {
     text-align: center;
     padding: 0;
     margin-top: 0;
+    font-size: 1.5vw;
   }
 
   div#buttonDiv {
@@ -494,10 +516,12 @@ p.tech-desc {
   /*Crew*/
 
   h2.crew-title {
+    margin-left: 20px;
     margin-bottom: 0;
     text-align: left;
 
   }
+
 
   p.crew-desc {
     margin-bottom: 5%;
@@ -606,6 +630,7 @@ p.tech-desc {
   div.container {
     width: 100%;
     top: 0;
+    display: none;
 
   }
 
@@ -613,8 +638,102 @@ p.tech-desc {
     width: 100%;
     top: 0;
     left: 0;
+    display: none
 
   }
+
+  #check01 {
+    display: none;
+  }
+
+
+  /* ul.nav {
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: small;
+
+
+  } */
+
+
+  /*position the label*/
+  /* label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  } */
+
+  /*show the submenu when input is checked*/
+  input:checked~ul.nav-dropdown {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 0;
+    width: 70%;
+    /* background-color: grey; */
+
+  }
+
+
+  .nav-dropdown-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .nav-dropdown a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .nav-dropdown a:hover {
+    background-color: grey;
+  }
+
+
+/*Div containing each bar*/
+  .nav-drop {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+/*Nav Bars*/
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+
+/*Nav Change Class*/
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
 
   div#textBox {
     width: 100%;
@@ -626,11 +745,6 @@ p.tech-desc {
     margin-left: 10%;
   }
 
-  ul.nav {
-    text-align: center;
-    padding: 0;
-    margin-top: 0;
-  }
 
   div#buttonDiv {
     float: left;
@@ -682,8 +796,10 @@ p.tech-desc {
     margin-left: 10%;
   }
 
+
   h2.crew-title {
-    margin-bottom: 0;
+    margin-left: 20px;
+    margin-bottom: 50px;
     text-align: left;
     /*position: relative;*/
     /*left:0;*/
@@ -793,12 +909,4 @@ p.tech-desc {
 }
 
 
-}
-
-@media screen and (max-width: 550px) {
-  li.nav-item a {
-    font-size: small;
-    text-transform: capitalize;
-
-  }
 }
