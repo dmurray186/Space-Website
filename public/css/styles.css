@@ -838,17 +838,24 @@ p.tech-desc {
     /*display: block;*/
   }
 
+  div.crew-menu-div {
+    order: 2;
+    width: 100%;
+  }
+
   div.crew-info {
     margin-top: 15%;
     margin-left: 0;
     width: 100%;
     text-align: center;
+    order: 3;
   }
 
   div.crew-div {
-    float: left;
+    /*float: left;*/
     width: 100%;
     margin-top: 5%;
+    order: 1;
 
   }
 
