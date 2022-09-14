@@ -312,16 +312,9 @@ p.distance-avg {
 
 /*Crew Page*/
 
-div.crew-info {
-  width: 35%;
-  display: inline-block;
-  margin-left: 15%;
-  margin-top: 10%;
-}
-
 h2.crew-title {
   /* margin-left: 10px; */
-  margin-bottom: 20%;
+  margin-bottom: 0;
 
 }
 
@@ -340,20 +333,42 @@ p.crew-desc {
   line-height: 1.5;
 }
 
+/*Info text*/
+div.crew-info {
+  /* float: left; */
+  width: 40%;
+  display: inline-block;
+  margin-left: 10%;
+  border: 2px solid white;
+
+}
+
+/*Image*/
 div.crew-div {
   float: right;
   display: inline-block;
   margin-right: 15%;
-  margin-top: 15%;
+  margin-top: 0;
   width: 30%;
   height: auto;
+  border: 2px solid white;
 }
 
-img.crew-image {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+/* img.crew-image {
+  float: right;
+  width: 30%;
+
+} */
+
+/*Buttons*/
+div.crew-menu-div {
+  width: 30%;
+  margin-left: 10%;
+  margin-top: 0;
+  border: 2px solid white;
+
 }
+
 
 button.crew-button {
   margin: 10px;
@@ -364,8 +379,8 @@ button.crew-button {
 
 
 
-/*Technology Page*/
 
+/*Technology Page*/
 
 h2.tech-title {
   margin-top: 10%;
