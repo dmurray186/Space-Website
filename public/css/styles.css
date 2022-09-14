@@ -312,16 +312,9 @@ p.distance-avg {
 
 /*Crew Page*/
 
-div.crew-info {
-  width: 35%;
-  display: inline-block;
-  margin-left: 15%;
-  margin-top: 10%;
-}
-
 h2.crew-title {
   /* margin-left: 10px; */
-  margin-bottom: 20%;
+  margin-bottom: 0;
 
 }
 
@@ -335,18 +328,39 @@ h1.crew-name {
 }
 
 p.crew-desc {
-  margin-bottom: 20%;
-  margin-right: 40%;
+  margin-bottom: 0;
+  margin-right: 10%;
   line-height: 1.5;
 }
 
+/*Text Div*/
+div.crew-text {
+  width: 35%;
+  display: inline-block;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  margin-top: 0;
+}
+
+
+/*Image div*/
 div.crew-div {
   float: right;
   display: inline-block;
   margin-right: 15%;
-  margin-top: 15%;
+  margin-top: 0;
   width: 30%;
-  height: auto;
+}
+
+/*Button Div*/
+div.crew-menu-div {
+  width: 35%;
+  display: inline-block;
+  margin-left: 15%;
+  margin-top: 0;
+  border: 2px solid white;
+  float: left;
+  text-align: center;
 }
 
 img.crew-image {
@@ -838,17 +852,33 @@ p.tech-desc {
     /*display: block;*/
   }
 
-  div.crew-info {
-    margin-top: 15%;
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-  }
-
   div.crew-div {
     float: left;
     width: 100%;
     margin-top: 5%;
+    order: 1;
+    margin-bottom: 10%;
+
+  }
+
+  /* div.crew-info {
+    margin-top: 15%;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  } */
+
+div.crew-text {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+}
+
+  div.crew-menu-div {
+    order: 2;
+    width: 70%;
+    text-align: center;
 
   }
 
