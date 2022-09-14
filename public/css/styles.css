@@ -343,7 +343,7 @@ div.crew-text {
 }
 
 
-/*Image div*/
+/*Image*/
 div.crew-div {
   float: right;
   display: inline-block;
@@ -361,13 +361,24 @@ div.crew-menu-div {
   border: 2px solid white;
   float: left;
   text-align: center;
+
 }
 
-img.crew-image {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+/* img.crew-image {
+  float: right;
+  width: 30%;
+
+} */
+
+/*Buttons*/
+div.crew-menu-div {
+  width: 30%;
+  margin-left: 10%;
+  margin-top: 0;
+  border: 2px solid white;
+
 }
+
 
 button.crew-button {
   margin: 10px;
@@ -378,8 +389,8 @@ button.crew-button {
 
 
 
-/*Technology Page*/
 
+/*Technology Page*/
 
 h2.tech-title {
   margin-top: 10%;
@@ -861,13 +872,7 @@ p.tech-desc {
 
   }
 
-  /* div.crew-info {
-    margin-top: 15%;
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-  } */
-
+  
 div.crew-text {
   order: 3;
   width: 100%;
@@ -879,8 +884,10 @@ div.crew-text {
     order: 2;
     width: 70%;
     text-align: center;
-
+    order: 3;
   }
+
+
 
   img.crew-image {
   margin-left: auto;
